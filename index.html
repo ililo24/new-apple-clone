@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apple</title>
+  
+  <!-- SEO Meta Tags -->
+  
+  <meta name="description" content="Discover the innovative world of Apple and shop everything iPhone, iPad, Mac, Apple Watch, AirPods, and more.">
+  <link rel="icon" type="image/x-icon" href="NewAppleImages/Logos and Icons-20260616T050437Z-3-001/Logos and Icons/apple-icon.ico">
+  
+  <!-- Fonts -->
+  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header class="header-wrapper" id="global-nav">
+    <div class="inner-wrapper">
+      <button class="mobile-menu-toggle" aria-label="Toggle Navigation Menu" id="menu-toggle-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <!-- Mobile Row Icons -->
+      <div class="header-mobile-icons">
+        <li class="logo-link" style="list-style: none;">
+          <a href="#"><img src="images/icons/logo.svg" alt="Apple logo"></a>
+        </li>
+      </div>
+
+      <nav class="links-wrapper" id="nav-links-container">
+        <ul>
+          <li class="logo-link">
+            <a href="#"><img src="images/icons/logo.svg" alt="Apple logo"></a>
+          </li>
+          <li><a href="#">Store</a></li>
+          <li><a href="#">Mac</a></li>
+          <li><a href="#">iPad</a></li>
+          <li><a href="#">iPhone</a></li>
+          <li><a href="#">Watch</a></li>
+          <li><a href="#">Vision</a></li>
+          <li><a href="#">AirPods</a></li>
+          <li><a href="#">TV & Home</a></li>
+          <li><a href="#">Entertainment</a></li>
+          <li><a href="#">Accessories</a></li>
+          <li><a href="#">Support</a></li>
+          <li class="search-link">
+            <a href="#"><img src="images/icons/search-icon.svg" alt="Search"></a>
+          </li>
+          <li class="cart-link">
+            <a href="#"><img src="images/icons/cart.svg" alt="Shopping Bag"></a>
+          </li>
+        </ul>
+      </nav>
+      
+      <!-- Mobile Cart Bag Icon displayed outside hamburger -->
+      <div class="header-mobile-icons" style="margin-left: auto; display: none;" id="mobile-bag-icon">
+        <a href="#"><img src="images/icons/cart.svg" alt="Shopping Bag" style="height: 16px; filter: brightness(0.1);"></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero 1: iPhone Lineup -->
+  <section class="hero-section" id="hero-iphone">
+    <div class="hero-content">
+      <h1>iPhone</h1>
+      <h2>Meet the latest iPhone lineup.</h2>
+      <div class="cta-group">
+        <a href="#" class="btn-primary">Learn more</a>
+        <a href="#" class="btn-secondary">Shop iPhone</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hero 2: Father's Day -->
+  <section class="hero-section" id="hero-fathersday">
+    <div class="hero-content">
+      <div class="subtitle-tag">Father's Day</div>
+      <h1>Father’s Day</h1>
+      <h2>June 21 is coming up. Find the perfect gift.</h2>
+      <div class="cta-group">
+        <a href="#" class="btn-primary">Shop</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hero 3: Apple for College -->
+  <section class="hero-section" id="hero-college">
+    <div class="hero-content">
+      <h1>Apple for College</h1>
+      <h2>Mac and iPad. Major in any field.</h2>
+      <div class="cta-group">
+        <a href="#" class="btn-primary">Learn more</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2x3 Grid Promo Cards -->
+  <section class="promo-grid">
+    <!-- MacBook Air -->
+    <div class="promo-card" id="promo-macbook-air">
+      <div class="promo-card-content">
+        <h3>MacBook Air</h3>
+        <p>Now supercharged by M5.</p>
+        <div class="cta-group">
+          <a href="#" class="btn-primary">Learn more</a>
+          <a href="#" class="btn-secondary">Buy</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- iPad Air -->
+    <div class="promo-card" id="promo-ipad-air">
+      <div class="promo-card-content">
+        <div class="logo-container">
+          <img src="NewAppleImages/Logos and Icons-20260616T050437Z-3-001/Logos and Icons/ipad-air-logo.png" alt="iPad Air logo">
+        </div>
+        <p>Now supercharged by M4.</p>
+        <div class="cta-group">
+          <a href="#" class="btn-primary">Learn more</a>
+          <a href="#" class="btn-secondary">Buy</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- MacBook Pro -->
+    <div class="promo-card" id="promo-macbook-pro">
+      <div class="promo-card-content">
+        <h3>MacBook Pro</h3>
+        <p>Now with M5, M5 Pro, and M5 Max.</p>
+        <div class="cta-group">
+          <a href="#" class="btn-primary">Learn more</a>
+          <a href="#" class="btn-secondary">Buy</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Apple Watch Series 11 -->
+    <div class="promo-card" id="promo-watch">
+      <div class="promo-card-content">
+        <div class="logo-container" style="color: var(--color-white); font-size: 26px; font-weight: 700; gap: 4px;">
+          <span></span> WATCH <span style="font-weight: 300; font-size: 18px; letter-spacing: 0.1em; margin-left: 5px;">SERIES 11</span>
+        </div>
+        <p>The ultimate way to watch your health.</p>
+        <div class="cta-group">
+          <a href="#" class="btn-primary">Learn more</a>
+          <a href="#" class="btn-secondary">Buy</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Apple Card -->
+    <div class="promo-card" id="promo-applecard">
+      <div class="promo-card-content">
+        <div class="logo-container">
+          <img src="NewAppleImages/Logos and Icons-20260616T050437Z-3-001/Logos and Icons/apple-card-logo.png" alt="Apple Card logo">
+        </div>
+        <p>Special new Apple Card<br>and AirPods Pro 3 offer.</p>
+        <div class="cta-group">
+          <a href="#" class="btn-primary">Learn more</a>
+        </div>
+        <div class="card-fine-print">Limitations and send requirements apply.<sup>1</sup></div>
+      </div>
+    </div>
+
+    <!-- Trade In -->
+    <div class="promo-card" id="promo-tradein">
+      <div class="promo-card-content">
+        <div class="logo-container">
+          <img src="NewAppleImages/Logos and Icons-20260616T050437Z-3-001/Logos and Icons/trade-in-logo.png" alt="Apple Trade In logo">
+        </div>
+        <p>Get up to $195–$695<br>in credit when you trade in<br>iPhone 13 or higher.<sup>2</sup></p>
+        <div class="cta-group">
+          <a href="#" class="btn-primary">Get your estimate</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Apple TV+ / Entertainment Slideshow Section -->
+  <section class="entertainment-section">
+    <h2 class="section-title">Endless entertainment.</h2>
+    
+    <div class="tv-slider-container">
+      <!-- Left/Right Floating Arrows -->
+      <button class="tv-arrow tv-arrow-left" id="tv-prev-btn" aria-label="Previous Slide">
+        <svg viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+      </button>
+      <button class="tv-arrow tv-arrow-right" id="tv-next-btn" aria-label="Next Slide">
+        <svg viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+      </button>
+
+      <div class="tv-slider-viewport">
+        <div class="tv-slider-track" id="tv-track">
+          <!-- Slide 1: F1 (Active Centered by Default) -->
+          <div class="tv-slide active" style="background-image: url('NewAppleImages/Banners-20260616T050414Z-3-001/Banners/F1-BANNER.jpg');" data-index="0">
+            <div class="tv-slide-overlay"></div>
+            <div class="tv-slide-content">
+              <div class="tv-slide-logo-wrapper">
+                <img src="NewAppleImages/Logos and Icons-20260616T050437Z-3-001/Logos and Icons/F1-LOGO.png" alt="F1 movie logo">
+              </div>
+              <div class="tv-slide-info">
+                <p>Every Grand Prix™, live and on demand—all in one place, all year long.</p>
+                <a href="#" class="tv-slide-btn">
+                  <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                  F1 on Apple TV
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2: Cape Fear -->
+          <div class="tv-slide" style="background-image: url('NewAppleImages/Banners-20260616T050414Z-3-001/Banners/CAPE-FEAR-BANNER.jpg');" data-index="1">
+            <div class="tv-slide-overlay"></div>
+            <div class="tv-slide-content">
+              <div class="tv-slide-logo-wrapper">
+                <img src="NewAppleImages/Logos and Icons-20260616T050437Z-3-001/Logos and Icons/CAPE-FEAR-LOGO.png" alt="Cape Fear logo">
+              </div>
+              <div class="tv-slide-info">
+                <p>A new psychological thriller series starring Javier Bardem.</p>
+                <a href="#" class="tv-slide-btn">
+                  <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                  Stream Now
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3: Star City -->
+          <div class="tv-slide" style="background-image: url('NewAppleImages/Banners-20260616T050414Z-3-001/Banners/STAR-CITY-BANNER.jpg');" data-index="2">
+            <div class="tv-slide-overlay"></div>
+            <div class="tv-slide-content">
+              <div class="tv-slide-logo-wrapper">
+                <img src="NewAppleImages/Logos and Icons-20260616T050437Z-3-001/Logos and Icons/STAR-CITY.png" alt="Star City logo">
+              </div>
+              <div class="tv-slide-info">
+                <p>The space race never ended. The battle for the moon continues.</p>
+                <a href="#" class="tv-slide-btn">
+                  <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                  Stream Now
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 4: Widows Bay -->
+          <div class="tv-slide" style="background-image: url('NewAppleImages/Banners-20260616T050414Z-3-001/Banners/WIDOWS-BAY-BANNER.jpg');" data-index="3">
+            <div class="tv-slide-overlay"></div>
+            <div class="tv-slide-content">
+              <div class="tv-slide-logo-wrapper">
+                <img src="NewAppleImages/Logos and Icons-20260616T050437Z-3-001/Logos and Icons/WIDOWS-BAY-LOGO.png" alt="Widows Bay logo">
+              </div>
+              <div class="tv-slide-info">
+                <p>Secrets run deep in a small coastal town.</p>
+                <a href="#" class="tv-slide-btn">
+                  <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                  Stream Now
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 5: Margo Money -->
+          <div class="tv-slide" style="background-image: url('NewAppleImages/Banners-20260616T050414Z-3-001/Banners/MARGO-MONEY-BANNER.jpg');" data-index="4">
+            <div class="tv-slide-overlay"></div>
+            <div class="tv-slide-content">
+              <div class="tv-slide-logo-wrapper">
+                <img src="NewAppleImages/Logos and Icons-20260616T050437Z-3-001/Logos and Icons/MARGO-MONEY-LOGO.png" alt="Margo Money logo">
+              </div>
+              <div class="tv-slide-info">
+                <p>She's betting it all on herself.</p>
+                <a href="#" class="tv-slide-btn">
+                  <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                  Stream Now
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 6: Baseball -->
+          <div class="tv-slide" style="background-image: url('NewAppleImages/Banners-20260616T050414Z-3-001/Banners/BASEBALL-BANNER.jpg');" data-index="5">
+            <div class="tv-slide-overlay"></div>
+            <div class="tv-slide-content">
+              <div class="tv-slide-logo-wrapper">
+                <img src="NewAppleImages/Logos and Icons-20260616T050437Z-3-001/Logos and Icons/BASEBALL-LOGO.png" alt="Baseball logo">
+              </div>
+              <div class="tv-slide-info">
+                <p>The legends of the game, their stories told like never before.</p>
+                <a href="#" class="tv-slide-btn">
+                  <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                  Stream Now
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 7: Burger League -->
+          <div class="tv-slide" style="background-image: url('NewAppleImages/Banners-20260616T050414Z-3-001/Banners/BURGER-LEAGUE-BANNER.jpg');" data-index="6">
+            <div class="tv-slide-overlay"></div>
+            <div class="tv-slide-content">
+              <div class="tv-slide-logo-wrapper">
+                <img src="NewAppleImages/Logos and Icons-20260616T050437Z-3-001/Logos and Icons/BURGER-LEAGUE-LOGO.png" alt="Burger League logo">
+              </div>
+              <div class="tv-slide-info">
+                <p>Small town. Big dreams. Better burgers.</p>
+                <a href="#" class="tv-slide-btn">
+                  <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                  Stream Now
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 8: Friends & Neighbors -->
+          <div class="tv-slide" style="background-image: url('NewAppleImages/Banners-20260616T050414Z-3-001/Banners/FRIENDS-AND-NEIGHBORS-BANNER.jpg');" data-index="7">
+            <div class="tv-slide-overlay"></div>
+            <div class="tv-slide-content">
+              <div class="tv-slide-logo-wrapper">
+                <img src="NewAppleImages/Logos and Icons-20260616T050437Z-3-001/Logos and Icons/FRIENDS-AND-NEIGHBORS-LOGO.png" alt="Friends and Neighbors logo">
+              </div>
+              <div class="tv-slide-info">
+                <p>Keep your friends close and your neighbors closer.</p>
+                <a href="#" class="tv-slide-btn">
+                  <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                  Stream Now
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 9: Maximum Pleasure -->
+          <div class="tv-slide" style="background-image: url('NewAppleImages/Banners-20260616T050414Z-3-001/Banners/MAXIMUM-PLEASURE-GUARANTEED-BANNER.jpg');" data-index="8">
+            <div class="tv-slide-overlay"></div>
+            <div class="tv-slide-content">
+              <div class="tv-slide-logo-wrapper">
+                <img src="NewAppleImages/Logos and Icons-20260616T050437Z-3-001/Logos and Icons/MAXIMUM-PLEASURE-GUARANTEED-LOGO.png" alt="Maximum Pleasure Guaranteed logo">
+              </div>
+              <div class="tv-slide-info">
+                <p>A glamorous comedy about luxury and lies.</p>
+                <a href="#" class="tv-slide-btn">
+                  <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                  Stream Now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carousel Pagination Controls -->
+      <div class="tv-slider-controls">
+        <div class="tv-slider-dots" id="tv-dots-wrapper">
+          <!-- Dots dynamically created via JS -->
+        </div>
+        <button class="tv-play-pause-btn" id="tv-play-pause-toggle" aria-label="Pause Slideshow">
+          <!-- Pause icon SVG -->
+          <svg viewBox="0 0 24 24" id="play-pause-icon"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Horizontal Scroller Section -->
+  <section class="scroller-container">
+    <div class="scroller-header">
+      <h3 style="font-size: 24px; font-weight: 600;">Explore more from Apple.</h3>
+    </div>
+    
+    <div class="scroller-track-wrapper">
+      <div class="scroller-track">
+        
+        <!-- Card 1: SpongeBob (Arcade) -->
+        <div class="scroller-card">
+          <div class="card-category cat-arcade">
+            <!-- Joystick Icon SVG -->
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21 6H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-10 7H8v3H6v-3H3v-2h3V8h2v3h3v2zm4.5 3c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4-3c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>
+            Arcade
+          </div>
+          <div class="scroller-card-image">
+            <img src="NewAppleImages/Cards-20260616T050419Z-3-001/Cards/SPONGEBOB-CARD.jpg" alt="SpongeBob Patty Pursuit">
+          </div>
+          <h4>SpongeBob Patty Pursuit</h4>
+          <p>Join SpongeBob on a hilarious quest to defeat Plankton!</p>
+          <a href="#" class="scroller-card-btn">Play now</a>
+        </div>
+
+        <!-- Card 2: Sabrina Carpenter (Music) -->
+        <div class="scroller-card">
+          <div class="card-category cat-music">
+            <!-- Music Note SVG -->
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
+            Music
+          </div>
+          <div class="scroller-card-image square">
+            <img src="NewAppleImages/Cards-20260616T050419Z-3-001/Cards/SABRINA-CARD.jpg" alt="Sabrina Carpenter album cover">
+          </div>
+          <h4>Sabrina Carpenter</h4>
+          <p>Listen to her hit record Short n' Sweet.</p>
+          <a href="#" class="scroller-card-btn">Listen now</a>
+        </div>
+
+        <!-- Card 3: Meditation (Fitness+) -->
+        <div class="scroller-card">
+          <div class="card-category cat-fitness">
+            <!-- Activity Rings Icon SVG -->
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
+            Fitness+
+          </div>
+          <div class="scroller-card-image">
+            <img src="NewAppleImages/Cards-20260616T050419Z-3-001/Cards/MEDITATION-CARD.jpg" alt="Strength and Kindness Meditation">
+          </div>
+          <h4>Strength and Kindness</h4>
+          <p>A peaceful meditation session to center your mind.</p>
+          <a href="#" class="scroller-card-btn">Watch now</a>
+        </div>
+
+        <!-- Card 4: PowerWash Simulator (Arcade) -->
+        <div class="scroller-card">
+          <div class="card-category cat-arcade">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21 6H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-10 7H8v3H6v-3H3v-2h3V8h2v3h3v2zm4.5 3c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4-3c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>
+            Arcade
+          </div>
+          <div class="scroller-card-image">
+            <img src="NewAppleImages/Cards-20260616T050419Z-3-001/Cards/PLAYGROUND-CARD.jpg" alt="PowerWash Simulator">
+          </div>
+          <h4>PowerWash Simulator</h4>
+          <p>Wash away your worries in this satisfying playground simulator.</p>
+          <a href="#" class="scroller-card-btn">Play now</a>
+        </div>
+
+        <!-- Card 5: A-List Pop (Music) -->
+        <div class="scroller-card">
+          <div class="card-category cat-music">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
+            Music
+          </div>
+          <div class="scroller-card-image square">
+            <img src="NewAppleImages/Cards-20260616T050419Z-3-001/Cards/A-LIST-CARD.jpg" alt="A-List Pop Playlist">
+          </div>
+          <h4>A-List Pop</h4>
+          <p>The hottest chart toppers updated daily.</p>
+          <a href="#" class="scroller-card-btn">Listen now</a>
+        </div>
+
+        <!-- Card 6: Hello Kitty (Arcade) -->
+        <div class="scroller-card">
+          <div class="card-category cat-arcade">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21 6H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-10 7H8v3H6v-3H3v-2h3V8h2v3h3v2zm4.5 3c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4-3c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>
+            Arcade
+          </div>
+          <div class="scroller-card-image">
+            <img src="NewAppleImages/Cards-20260616T050419Z-3-001/Cards/HELLO-KITTY-CARD.jpg" alt="Hello Kitty Island Adventure">
+          </div>
+          <h4>Hello Kitty Island Adventure</h4>
+          <p>Embark on a cozy island adventure with Hello Kitty and friends.</p>
+          <a href="#" class="scroller-card-btn">Play now</a>
+        </div>
+
+        <!-- Card 7: Sports (Fitness+) -->
+        <div class="scroller-card">
+          <div class="card-category cat-fitness">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
+            Fitness+
+          </div>
+          <div class="scroller-card-image">
+            <img src="NewAppleImages/Cards-20260616T050419Z-3-001/Cards/SPORTS-CARD.jpg" alt="Sports Workout Series">
+          </div>
+          <h4>High-Energy Workouts</h4>
+          <p>Get moving with specialized athlete training routines.</p>
+          <a href="#" class="scroller-card-btn">Start workout</a>
+        </div>
+
+        <!-- Card 8: Flowers (Fitness+) -->
+        <div class="scroller-card">
+          <div class="card-category cat-fitness">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
+            Fitness+
+          </div>
+          <div class="scroller-card-image">
+            <img src="NewAppleImages/Cards-20260616T050419Z-3-001/Cards/FLOWERS-CARD.jpg" alt="Mindful Cool Down">
+          </div>
+          <h4>Mindful Cool Down</h4>
+          <p>Slow down your day with deep stretches and calming flows.</p>
+          <a href="#" class="scroller-card-btn">Start workout</a>
+        </div>
+
+        <!-- Card 9: New Music Daily (Music) -->
+        <div class="scroller-card">
+          <div class="card-category cat-music">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
+            Music
+          </div>
+          <div class="scroller-card-image square">
+            <img src="NewAppleImages/Cards-20260616T050419Z-3-001/Cards/NEW-MUSIC-CARD.jpg" alt="New Music Daily Album Cover">
+          </div>
+          <h4>New Music Daily</h4>
+          <p>Listen to Sabrina Carpenter's latest single and many more.</p>
+          <a href="#" class="scroller-card-btn">Listen now</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footnotes Legal Section -->
+  <section class="footnotes-wrapper">
+    <div class="inner-wrapper">
+      <ol>
+        <li>1. Subject to credit approval. The cost of AirPods Pro 3, for purposes of this offer, does not include applicable taxes, fees, or other charges. Offer may be modified at any time and is not available to applicants who have had this card or who have another pending or approved application for the card. New Apple Card account owners who (1) first open a new Apple Card account and (2) then use it to buy AirPods Pro 3 directly from Apple, May 18, 2026, through June 15, 2026 ("Qualifying Period"), will qualify to earn up to $250 total Bonus Daily Cash after meeting the following spend requirements: beginning July 1, 2026, through April 30, 2027 ("Offer Period"), earn $25 Bonus Daily Cash each month after meeting the following spend requirements: make a minimum of ten (10) purchases of any amount ($0.01 or higher) that post to your account each month. The AirPods Pro 3 purchases must be made directly from Apple (online or in an Apple Store) using the new Apple Card. Refurbished products, other AirPods models, purchases from third-party retailers, international purchases, and purchases for business purposes such as company bulk orders are excluded. All AirPods Pro 3 payment options from Apple using Apple Card are eligible for this offer including pay in full or financing via Apple Card Monthly Installments, and regardless of whether a trade-in value was applied to reduce the purchase cost. The qualifying AirPods Pro 3 purchase must be made entirely with an Apple Card or Apple Card Account balance. The AirPods Pro 3 purchase does not count toward the ten (10) qualifying purchases required in any month during the Offer Period. Returning the qualifying AirPods Pro 3 purchase may result in forfeiture of eligibility for this offer.
+        <br><br>
+        To facilitate this offer and to confirm your AirPods Pro 3 purchase qualifies for this offer, Goldman Sachs will share certain Apple transaction information with Apple, and Apple will provide Goldman Sachs with a confirmation of your qualifying AirPods Pro 3 purchase. Any personal information processed by Apple or Goldman Sachs under this offer will be handled in accordance with the respective Apple and Goldman Sachs privacy policies.
+        <br><br>
+        Offer not available to Apple Card Family members added to, or merged with, an Apple Card account during the Offer Period. Qualifying Purchases can only be made by the new Apple Card account owner who opens a new Apple Card account during the Qualifying Period. New Apple Card account owner does not include Co-Owners or Participants added to an Apple Card family during the Offer Period. This means purchases made by Apple Card Family members will not be included toward the new Apple Card account owner's Qualifying Purchases. Limit one offer per new Apple Card account. This offer can be combined with other Apple Card promotional offers during the Qualifying Period and the Offer Period. If you participate in other Apple Card promotions during the Qualifying Period and the Offer Period, the $25 Bonus Daily Cash earned under this offer will be awarded in addition to applicable Daily Cash earned under additional promotions. $25 Bonus Daily Cash is earned and transferred after the tenth purchase transaction is completed each month during the Offer Period. If a merchant chooses to combine separate charges into a single charge before processing the transaction, the combined transaction will only count as one single purchase transaction for purposes of this offer. For example, if you purchase three items using your Apple Card at the same merchant three separate times within one or more days, that merchant may combine those three transactions and submit them as a single transaction. In that case, that combined transaction will only count as one single purchase transaction for purposes of this offer. Daily Cash is subject to exclusions, and additional details apply. See the Apple Card Customer Agreement for more information. If you determine that you have engaged in or plan to engage in abuse or gaming in connection with this offer, you will not be eligible for this offer.
+        <br><br>
+        Apple Payments Services LLC, a subsidiary of Apple Inc., is a service provider of Goldman Sachs Bank USA for Apple Card and Savings accounts. Apple Cash services are provided by Green Dot Bank, Member FDIC. Apple Payments Services LLC, a subsidiary of Apple Inc., is a service provider of Green Dot Bank for Apple Cash accounts. Neither Apple Inc. nor Apple Payments Services LLC is a bank.
+        <br><br>
+        To access and use all Apple Card features and products available only to Apple Card users, you must add Apple Card to Wallet on an iPhone or iPad that supports and has the latest version of iOS or iPadOS. Apple Card is subject to credit approval, available only for qualifying applicants in the United States, and issued by Goldman Sachs Bank USA, Salt Lake City Branch.
+        <br><br>
+        All communications from Apple and Goldman Sachs Bank USA about Apple Card (including transactional and marketing communications) and customer service support are available in English. Certain communications about Apple Card can be viewed in another language depending on your device language settings. If you reside in the U.S. Virgin Islands, American Samoa, Guam, Northern Mariana Islands, or U.S. Minor Outlying Islands, please call Goldman Sachs at 877-255-5923 with questions about Apple Card.</li>
+        
+        <li>2. Trade-in values will vary based on the condition, year, and configuration of your eligible trade-in device. Not all devices are eligible for credit. You must be at least the age of majority to be eligible to trade in for credit or for an Apple Gift Card. Trade-in value may be applied toward qualifying new device purchase, or added to an Apple Gift Card. Actual value awarded is based on receipt of a qualifying device matching the description provided when estimate was made. Sales tax may be assessed on full value of a new device purchase. In-store trade-in requires presentation of a valid photo ID (local law may require saving this information). Offer may not be available in all stores and may vary between in-store and online trade-in. Some stores may have additional requirements. Apple or its trade-in partners reserve the right to refuse, cancel, or limit quantity of any trade-in transaction for any reason. More details are available from Apple's trade-in partner for trade-in and recycling of eligible devices. Restrictions and limitations may apply.</li>
+      </ol>
+      <p style="margin-top: 15px;">A subscription is required for Apple Arcade, Apple Fitness+, Apple Music, and Apple TV+.</p>
+      <p>Features are subject to change. Some features, applications, and services may not be available in all regions or all languages.</p>
+    </div>
+  </section>
+
+  <!-- Footer Link Directory Section -->
+  <footer class="footer-wrapper">
+    <div class="inner-wrapper">
+      
+      <div class="footer-links-grid">
+        <!-- Column 1 -->
+        <div class="footer-column">
+          <div class="footer-column-section">
+            <h3>Shop and Learn</h3>
+            <ul>
+              <li><a href="#">Store</a></li>
+              <li><a href="#">Mac</a></li>
+              <li><a href="#">iPad</a></li>
+              <li><a href="#">iPhone</a></li>
+              <li><a href="#">Watch</a></li>
+              <li><a href="#">Vision</a></li>
+              <li><a href="#">AirPods</a></li>
+              <li><a href="#">TV & Home</a></li>
+              <li><a href="#">Accessories</a></li>
+              <li><a href="#">Gift Cards</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="footer-column">
+          <div class="footer-column-section">
+            <h3>Account</h3>
+            <ul>
+              <li><a href="#">Manage Your Apple ID</a></li>
+              <li><a href="#">Apple Store Account</a></li>
+              <li><a href="#">iCloud.com</a></li>
+            </ul>
+          </div>
+          <div class="footer-column-section">
+            <h3>Entertainment</h3>
+            <ul>
+              <li><a href="#">Apple One</a></li>
+              <li><a href="#">Apple TV+</a></li>
+              <li><a href="#">Apple Music</a></li>
+              <li><a href="#">Apple Arcade</a></li>
+              <li><a href="#">Apple Fitness+</a></li>
+              <li><a href="#">Apple Podcasts</a></li>
+              <li><a href="#">Apple Books</a></li>
+              <li><a href="#">App Store</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="footer-column">
+          <div class="footer-column-section">
+            <h3>Apple Store</h3>
+            <ul>
+              <li><a href="#">Find a Store</a></li>
+              <li><a href="#">Genius Bar</a></li>
+              <li><a href="#">Today at Apple</a></li>
+              <li><a href="#">Group Reservations</a></li>
+              <li><a href="#">Apple Camp</a></li>
+              <li><a href="#">Apple Store App</a></li>
+              <li><a href="#">Certified Refurbished</a></li>
+              <li><a href="#">Apple Trade In</a></li>
+              <li><a href="#">Financing</a></li>
+              <li><a href="#">Carrier Deals at Apple</a></li>
+              <li><a href="#">Order Status</a></li>
+              <li><a href="#">Shopping Help</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Column 4 -->
+        <div class="footer-column">
+          <div class="footer-column-section">
+            <h3>For Business</h3>
+            <ul>
+              <li><a href="#">Apple and Business</a></li>
+              <li><a href="#">Shop for Business</a></li>
+            </ul>
+          </div>
+          <div class="footer-column-section">
+            <h3>For Education</h3>
+            <ul>
+              <li><a href="#">Apple and Education</a></li>
+              <li><a href="#">Shop for K-12</a></li>
+              <li><a href="#">Shop for College</a></li>
+            </ul>
+          </div>
+          <div class="footer-column-section">
+            <h3>For Healthcare</h3>
+            <ul>
+              <li><a href="#">Apple and Healthcare</a></li>
+              <li><a href="#">Apple in Healthcare</a></li>
+            </ul>
+          </div>
+          <div class="footer-column-section">
+            <h3>For Government</h3>
+            <ul>
+              <li><a href="#">Apple and Government</a></li>
+              <li><a href="#">Shop for Veterans and Military</a></li>
+              <li><a href="#">Shop for State and Local Government</a></li>
+              <li><a href="#">Shop for Federal Government</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Column 5 -->
+        <div class="footer-column">
+          <div class="footer-column-section">
+            <h3>Apple Values</h3>
+            <ul>
+              <li><a href="#">Accessibility</a></li>
+              <li><a href="#">Education</a></li>
+              <li><a href="#">Environment</a></li>
+              <li><a href="#">Inclusion and Diversity</a></li>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Racial Equity and Justice</a></li>
+              <li><a href="#">Supply Chain Innovation</a></li>
+            </ul>
+          </div>
+          <div class="footer-column-section">
+            <h3>About Apple</h3>
+            <ul>
+              <li><a href="#">Newsroom</a></li>
+              <li><a href="#">Apple Leadership</a></li>
+              <li><a href="#">Career Opportunities</a></li>
+              <li><a href="#">Investors</a></li>
+              <li><a href="#">Ethics & Compliance</a></li>
+              <li><a href="#">Events</a></li>
+              <li><a href="#">Contact Apple</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="my-apple-wrapper">
+        More ways to shop: <a href="#">Find an Apple Store</a> or <a href="#">other retailer</a> near you. Or call 1-800-MY-APPLE.
+      </div>
+
+      <div class="copyright-wrapper">
+        <div class="copyright-text">
+          Copyright © 2026 Apple Inc. All rights reserved.
+        </div>
+        <div class="copyright-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Sales and Refunds</a>
+          <a href="#">Legal</a>
+          <a href="#">Site Map</a>
+        </div>
+        <div class="footer-country">
+          <div class="flag-wrapper"><img src="images/icons/16.png" alt="US Flag"></div>
+          <a href="#">United States</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  </body>
+</html>
