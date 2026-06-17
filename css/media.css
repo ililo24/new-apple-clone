@@ -1,0 +1,159 @@
+/* Responsive Media Queries */
+
+@media (max-width: 1068px) {
+    .hero-1 {
+        background-image: url("/img/jpg/hero/iphone-family/hero_iphone_family__be5jkzxszb1e_medium_2x.jpg");
+    }
+    .hero-2 {
+        background-image: url("/img/jpg/hero/fathers-day/hero_fd26__c9vr0hxu24eq_medium_2x.jpg");
+    }
+    .hero-3 {
+        background-image: url("/img/jpg/hero/apple-for-college/hero_college_students_2026__dzrtx52rt9aq_medium_2x.jpg");
+    }
+
+    .promo-1 {
+        background-image: url("/img/jpg/promo/macbook-m5/promo_macbook_air_m5__e5xk2yysqiie_medium_2x.jpg");
+    }
+    .promo-2 {
+        background-image: url("/img/jpg/promo/ipad-air-m4/promo_ipad_air_m4__bgcv7t286k8y_medium_2x.jpg");
+    }
+    .promo-3 {
+        background-image: url("/img/jpg/promo/macbook-pro/promo_macbook_pro__c9td9w1mc8ia_medium_2x.jpg");
+    }
+    .promo-4 {
+        background-image: url("/img/jpg/promo/apple-watch-series/promo_apple_watch_series_11__gnlwqxe1jlu2_medium_2x.jpg");
+    }
+    .promo-5 {
+        background-image: url("/img/jpg/promo/apple-card-airpods/promo_apple_card_airpods__dpbuw4e90126_medium_2x.jpg");
+    }
+    .promo-6 {
+        background-image: url("/img/jpg/promo/iphone-tradein/promo_iphone_tradein__e4hrjxmgmf0i_medium_2x.jpg");
+    }
+}
+
+@media (max-width: 734px) {
+    .hero-1 {
+        background-image: url("/img/jpg/hero/iphone-family/hero_iphone_family__be5jkzxszb1e_small_2x.jpg");
+    }
+    .hero-2 {
+        background-image: url("/img/jpg/hero/fathers-day/hero_fd26__c9vr0hxu24eq_small_2x.jpg");
+    }
+    .hero-3 {
+        background-image: url("/img/jpg/hero/apple-for-college/hero_college_students_2026__dzrtx52rt9aq_small_2x.jpg");
+    }
+
+    .promo-1 {
+        background-image: url("/img/jpg/promo/macbook-m5/promo_macbook_air_m5__e5xk2yysqiie_small_2x.jpg");
+    }
+    .promo-2 {
+        background-image: url("/img/jpg/promo/ipad-air-m4/promo_ipad_air_m4__bgcv7t286k8y_small_2x.jpg");
+    }
+    .promo-3 {
+        background-image: url("/img/jpg/promo/macbook-pro/promo_macbook_pro__c9td9w1mc8ia_small_2x.jpg");
+    }
+    .promo-4 {
+        background-image: url("/img/jpg/promo/apple-watch-series/promo_apple_watch_series_11__gnlwqxe1jlu2_small_2x.jpg");
+    }
+    .promo-5 {
+        background-image: url("/img/jpg/promo/apple-card-airpods/promo_apple_card_airpods__dpbuw4e90126_small_2x.jpg");
+    }
+    .promo-6 {
+        background-image: url("/img/jpg/promo/iphone-tradein/promo_iphone_tradein__e4hrjxmgmf0i_small_2x.jpg");
+    }
+
+    .pic {
+        height: 500;
+    }
+
+    .pic-grid#promo {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0;
+    }
+
+    .container.real-footer {
+        flex-direction: column-reverse;
+        gap: 4px;
+    }
+
+    .real-footer p.state,
+    .real-footer p {
+        padding-left: 20px;
+        margin: 0;
+    }
+
+}
+
+/* Navbar Responsive Breakpoint */
+
+@media (max-width: 833px) {
+    .link-text {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    /* Push search, bag, and hamburger to the right */
+    .mobile-right-start {
+        margin-left: auto;
+    }
+
+    /* The links on the bottom to make them drop down */
+
+    .footer-grid {
+        display: none;
+    }
+
+    .mobile-only {
+        display: block;
+        margin-bottom: 20px;
+        padding-top: 30px;
+    }
+
+    .footer-details {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    }
+
+    .footer-details summary {
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 36px;
+        
+    }
+
+    summary h3 {
+        opacity: 0.8;
+        font-weight: 600;
+    }
+
+    .chevron {
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        border-right: 1.5px solid #1d1d1f;
+        border-bottom: 1.5px solid #1d1d1f;
+        transform: rotate(45deg) rotateX(0deg); /* Points down by default */
+        transition: transform 0.2s ease-in-out;
+        margin-right: 5px;
+    }
+
+    .footer-details[open] .chevron {
+        transform: rotate(-45deg) rotateX(180deg);
+    }
+
+    .footer-details ul {
+        padding: 5px 0 16px;
+        margin-left: 18px;
+    }
+
+    .footer-details ul li {
+        padding: 6px 14px;
+    }
+
+    .footer-details ul li a {
+        display: block;
+    }
+}
