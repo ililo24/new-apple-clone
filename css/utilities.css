@@ -83,8 +83,9 @@ i {
 }
 
 .info-title.title-img img {
-    width: 100%;
+    width: auto;
     height: 100%;
+    object-fit: contain;
     display: block;
 }
 
