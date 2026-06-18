@@ -1,11 +1,3 @@
-/* ============================================================
-   APPLE CLONE — main.css
-   Merged from: utilities.css + style.css + media.css
-   Order: Reset → Base → Layout → Components → Animations → Responsive
-   ============================================================ */
-
-/* ── 1. RESET & BASE ─────────────────────────────────────── */
-
 *, *::before, *::after {
   padding: 0;
   margin: 0;
@@ -29,7 +21,7 @@ ul { list-style: none; }
 
 i { width: auto; }
 
-/* ── 2. LAYOUT UTILITIES ─────────────────────────────────── */
+
 
 .container {
   display: flex;
@@ -40,7 +32,7 @@ i { width: auto; }
   padding: 0 22px;
 }
 
-/* ── 3. NAVBAR ───────────────────────────────────────────── */
+
 
 .navbar {
   position: fixed;
@@ -82,18 +74,16 @@ i { width: auto; }
   cursor: pointer;
 }
 
-/* Spacer that compensates for the fixed navbar height */
 .empty-space {
   width: 100%;
   height: 44px;
   background-color: #fff;
 }
 
-/* ── 4. PIC GRID (Hero + Promo shared grid) ──────────────── */
 
 .pic-grid {
   display: grid;
-  grid-template-columns: 1fr;       /* Hero: single full-width column */
+  grid-template-columns: 1fr;       
   gap: 12px;
   margin-bottom: 12px;
   text-align: center;
@@ -101,15 +91,13 @@ i { width: auto; }
 }
 
 .pic-grid#promo {
-  grid-template-columns: repeat(2, 1fr); /* Promo: 2-column grid */
+  grid-template-columns: repeat(2, 1fr); 
   padding: 0 12px;
 }
 
-/* ── 5. PIC CARDS ────────────────────────────────────────── */
-
 .pic {
   height: 580px;
-  background-color: aqua;   /* fallback before image loads */
+  background-color: aqua;   
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -132,7 +120,6 @@ i { width: auto; }
   padding-bottom: 59px;
 }
 
-/* ── 6. CARD TYPOGRAPHY ──────────────────────────────────── */
 
 .text-max { max-width: 250px; }
 
@@ -143,7 +130,7 @@ i { width: auto; }
   line-height: 1.07;
 }
 
-/* Logo-image variant of the title */
+
 .info-title.title-img {
   height: 49px;
   display: flex;
@@ -177,7 +164,6 @@ i { width: auto; }
   letter-spacing: -0.011em;
 }
 
-/* ── 7. BUTTONS ──────────────────────────────────────────── */
 
 .aside-buttons {
   margin-top: 17px;
@@ -221,13 +207,11 @@ i { width: auto; }
   color: #000;
 }
 
-/* ── 8. HERO BACKGROUNDS (large / default) ───────────────── */
 
 .hero-1 { background: url("/img/jpg/hero/iphone-family/hero_iphone_family__be5jkzxszb1e_large_2x.jpg") no-repeat center / cover; }
 .hero-2 { background: url("/img/jpg/hero/fathers-day/hero_fd26__c9vr0hxu24eq_large_2x.jpg") no-repeat center / cover; }
 .hero-3 { background: url("/img/jpg/hero/apple-for-college/hero_college_students_2026__dzrtx52rt9aq_large_2x.jpg") no-repeat center / cover; }
 
-/* ── 9. PROMO BACKGROUNDS (large / default) ──────────────── */
 
 .promo-1 { background: url("/img/jpg/promo/macbook-m5/promo_macbook_air_m5__e5xk2yysqiie_large_2x.jpg") no-repeat center / cover; }
 .promo-2 { background: url("/img/jpg/promo/ipad-air-m4/promo_ipad_air_m4__bgcv7t286k8y_large_2x.jpg") no-repeat center / cover; }
@@ -236,8 +220,6 @@ i { width: auto; }
 .promo-5 { background: url("/img/jpg/promo/apple-card-airpods/promo_apple_card_airpods__dpbuw4e90126_large_2x.jpg") no-repeat center / cover; }
 .promo-6 { background: url("/img/jpg/promo/iphone-tradein/promo_iphone_tradein__e4hrjxmgmf0i_large_2x.jpg") no-repeat center / cover; }
 
-/* ── 10. CAROUSEL ────────────────────────────────────────── */
-
 .carousel-header {
   font-size: 56px;
   text-align: center;
@@ -245,7 +227,6 @@ i { width: auto; }
   font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-/* Shared wrapper behaviour for both carousel rows */
 .carousel-container,
 .carousel-container-bottom {
   width: 100%;
@@ -257,7 +238,6 @@ i { width: auto; }
 .carousel-container        { padding: 40px 0; }
 .carousel-container-bottom { padding: 10px 0; }
 
-/* The moving strip inside each carousel */
 .carousel-container        .carousel-track { animation: slideLeftTop    40s linear infinite alternate; }
 .carousel-container-bottom .carousel-track { animation: slideLeftBottom 30s linear infinite alternate; }
 
@@ -269,7 +249,6 @@ i { width: auto; }
   gap: 20px;
 }
 
-/* Individual images */
 .carousel-image {
   width: 700px;
   height: 400px;
@@ -286,7 +265,6 @@ i { width: auto; }
   flex-shrink: 0;
 }
 
-/* ── 11. KEYFRAME ANIMATIONS ─────────────────────────────── */
 
 @keyframes slideLeftTop {
   from { transform: translateX(0); }
@@ -298,7 +276,6 @@ i { width: auto; }
   to   { transform: translateX(calc(-100% + 100vw)); }
 }
 
-/* ── 12. FOOTER ──────────────────────────────────────────── */
 
 footer {
   font-size: 12px;
@@ -361,7 +338,7 @@ footer ul p        { padding-bottom: 9.6px; }
 .real-footer a:hover,
 .footer-details a:hover { text-decoration: underline; }
 
-/* Real footer (bottom copyright bar) */
+
 .container.real-footer {
   display: flex;
   flex-direction: row;
@@ -375,10 +352,10 @@ footer ul p        { padding-bottom: 9.6px; }
 .container#many-links     { padding: 0 25px; }
 .massive-text.container   { margin-bottom: 0; }
 
-/* Mobile-only accordion (hidden on desktop) */
+
 .mobile-only { display: none; }
 
-/* ── 13. RESPONSIVE — TABLET (≤ 1068px) ─────────────────── */
+
 
 @media (max-width: 1068px) {
   .hero-1  { background-image: url("/img/jpg/hero/iphone-family/hero_iphone_family__be5jkzxszb1e_medium_2x.jpg"); }
@@ -393,7 +370,7 @@ footer ul p        { padding-bottom: 9.6px; }
   .promo-6 { background-image: url("/img/jpg/promo/iphone-tradein/promo_iphone_tradein__e4hrjxmgmf0i_medium_2x.jpg"); }
 }
 
-/* ── 14. RESPONSIVE — NAVBAR COLLAPSE (≤ 833px) ─────────── */
+
 
 @media (max-width: 833px) {
   .link-text       { display: none; }
@@ -426,7 +403,6 @@ footer ul p        { padding-bottom: 9.6px; }
     font-weight: 600;
   }
 
-  /* Animated chevron arrow */
   .chevron {
     display: inline-block;
     width: 8px;
@@ -445,7 +421,6 @@ footer ul p        { padding-bottom: 9.6px; }
   .footer-details ul li a     { display: block; }
 }
 
-/* ── 15. RESPONSIVE — MOBILE (≤ 734px) ──────────────────── */
 
 @media (max-width: 734px) {
   /* Swap in smaller images */
@@ -460,13 +435,12 @@ footer ul p        { padding-bottom: 9.6px; }
   .promo-5 { background-image: url("/img/jpg/promo/apple-card-airpods/promo_apple_card_airpods__dpbuw4e90126_small_2x.jpg"); }
   .promo-6 { background-image: url("/img/jpg/promo/iphone-tradein/promo_iphone_tradein__e4hrjxmgmf0i_small_2x.jpg"); }
 
-  /* Promo grid collapses to 1 column */
+  
   .pic-grid#promo {
     grid-template-columns: 1fr;
     padding: 0;
   }
 
-  /* Copyright bar stacks vertically */
   .container.real-footer {
     flex-direction: column-reverse;
     gap: 4px;
