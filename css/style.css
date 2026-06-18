@@ -1,26 +1,3 @@
-:root {
-  --font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  
-  --color-black: #000000;
-  --color-dark-grey: #1d1d1f;
-  --color-grey: #86868b;
-  --color-light-grey: #f5f5f7;
-  --color-border: #d2d2d7;
-  --color-blue: #0071e3;
-  --color-blue-hover: #0077ed;
-  --color-white: #ffffff;
-  
-  --nav-bg: rgba(245, 245, 247, 0.72);
-  --nav-border: rgba(0, 0, 0, 0.08);
-  --nav-text: #1d1d1f;
-  --nav-text-hover: #000000;
-
-
-  --transition-fast: 0.2s cubic-bezier(0.25, 1, 0.5, 1);
-  --transition-medium: 0.4s cubic-bezier(0.25, 1, 0.5, 1);
-  --transition-slow: 0.6s cubic-bezier(0.25, 1, 0.5, 1);
-}
-
 * {
   padding: 0;
   margin: 0;
@@ -104,313 +81,143 @@ ul {
 /* Heroes */
 
 .hero-1 {
-  background: url("../img/jpg/hero/iphone-family/hero_iphone_family__be5jkzxszb1e_large_2x.jpg")
+  background: url("/img/jpg/hero/iphone-family/hero_iphone_family__be5jkzxszb1e_large_2x.jpg")
     no-repeat center center / cover;
 }
 
 .hero-2 {
-  background: url("../img/jpg/hero/fathers-day/hero_fd26__c9vr0hxu24eq_large_2x.jpg")
+  background: url("/img/jpg/hero/fathers-day/hero_fd26__c9vr0hxu24eq_large_2x.jpg")
     no-repeat center center / cover;
 }
 
 .hero-3 {
-  background: url("../img/jpg/hero/apple-for-college/hero_college_students_2026__dzrtx52rt9aq_large_2x.jpg")
+  background: url("/img/jpg/hero/apple-for-college/hero_college_students_2026__dzrtx52rt9aq_large_2x.jpg")
     no-repeat center center / cover;
 }
 
 /* Promos */
 .promo-1 {
-  background: url("../img/jpg/promo/macbook-m5/promo_macbook_air_m5__e5xk2yysqiie_large_2x.jpg")
+  background: url("/img/jpg/promo/macbook-m5/promo_macbook_air_m5__e5xk2yysqiie_large_2x.jpg")
     no-repeat center center / cover;
 }
 
 .promo-2 {
-  background: url("../img/jpg/promo/ipad-air-m4/promo_ipad_air_m4__bgcv7t286k8y_large_2x.jpg")
+  background: url("/img/jpg/promo/ipad-air-m4/promo_ipad_air_m4__bgcv7t286k8y_large_2x.jpg")
     no-repeat center center / cover;
 }
 
 .promo-3 {
-  background: url("../img/jpg/promo/macbook-pro/promo_macbook_pro__c9td9w1mc8ia_large_2x.jpg")
+  background: url("/img/jpg/promo/macbook-pro/promo_macbook_pro__c9td9w1mc8ia_large_2x.jpg")
     no-repeat center center / cover;
   color: #fff;
 
 }
 
 .promo-4{
-  background: url("../img/jpg/promo/apple-watch-series/promo_apple_watch_series_11__gnlwqxe1jlu2_large_2x.jpg")
+  background: url("/img/jpg/promo/apple-watch-series/promo_apple_watch_series_11__gnlwqxe1jlu2_large_2x.jpg")
     no-repeat center center / cover;
 }
 
 .promo-5 {
-  background: url("../img/jpg/promo/apple-card-airpods/promo_apple_card_airpods__dpbuw4e90126_large_2x.jpg")
+  background: url("/img/jpg/promo/apple-card-airpods/promo_apple_card_airpods__dpbuw4e90126_large_2x.jpg")
     no-repeat center center / cover;
 }
 
 .promo-6 {
-  background: url("../img/jpg/promo/iphone-tradein/promo_iphone_tradein__e4hrjxmgmf0i_large_2x.jpg")
+  background: url("/img/jpg/promo/iphone-tradein/promo_iphone_tradein__e4hrjxmgmf0i_large_2x.jpg")
     no-repeat center center / cover;
 }
 
-/* --- Apple TV+ & Entertainment Slider (CSS Scroll Snap) --- */
-.entertainment-section {
-  padding: 60px 0 30px;
-  background-color: #f5f5f7;
-}
-
-.entertainment-section h2.section-title {
-  font-size: 44px;
-  font-weight: 700;
+.carousel-header {
+  font-size: 56px;
   text-align: center;
-  margin-bottom: 35px;
-  letter-spacing: -0.015em;
+  padding-top: 5px;
+  font-family:
+    "SF Pro Display",
+    "SF Pro Icons",
+    "Helvetica Neue",
+    "Helvetica",
+    "Arial",
+    sans-serif;
 }
 
-/* Main TV Slider styling */
-.tv-slider-container {
-  position: relative;
+
+.carousel-container {
   width: 100%;
-  padding: 10px 0 20px;
+  padding: 40px 0;
+  background-color: #ffffff;
+  overflow: hidden;
+  display: flex;
 }
 
-.tv-slider-viewport {
-  width: 100%;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  scrollbar-width: none; /* Hide standard Firefox scrollbar */
-  padding: 0 calc((100vw - 980px) / 2); /* Keeps active slide centered */
-}
-
-.tv-slider-viewport::-webkit-scrollbar {
-  display: none; /* Hide chrome/safari scrollbar */
-}
-
-.tv-slider-track {
+.carousel-container .carousel-track {
   display: flex;
   gap: 20px;
-  width: max-content;
+
+  animation: slideLeftTop 40s linear infinite alternate; 
 }
 
-.tv-slide {
-  position: relative;
-  width: 980px;
-  height: 500px;
-  border-radius: 18px;
-  overflow: hidden;
-  flex-shrink: 0;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  scroll-snap-align: center;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-  transition: transform var(--transition-medium);
+.carousel-container .carousel-track:hover {
+  animation-play-state: paused;
 }
 
-.tv-slide:hover {
-  transform: scale(1.005);
-}
-
-/* Gradient overlay for readability */
-.tv-slide-overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 50%;
-  background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.4) 50%, transparent 100%);
-  z-index: 2;
-}
-
-.tv-slide-content {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 40px 60px;
-  z-index: 3;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 30px;
-  color: var(--color-white);
-}
-
-.tv-slide-logo-wrapper {
-  flex-shrink: 0;
-}
-
-.tv-slide-logo-wrapper img {
-  max-height: 48px;
-  width: auto;
-  object-fit: contain;
-}
-
-.tv-slide-info {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.tv-slide-info p {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.4;
-  max-width: 450px;
-}
-
-.tv-slide-btn {
-  background-color: var(--color-white);
-  color: var(--color-black);
-  padding: 12px 24px;
-  border-radius: 980px;
-  font-size: 14px;
-  font-weight: 600;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  white-space: nowrap;
-  transition: transform var(--transition-fast), background-color var(--transition-fast);
-}
-
-.tv-slide-btn:hover {
-  background-color: #e8e8ed;
-  transform: scale(1.03);
-}
-
-.tv-slide-btn svg {
-  fill: currentColor;
-  height: 12px;
-  width: 12px;
-}
-
-/* --- Scrollable Cards Row (Entertainment Cards) --- */
-.scroller-container {
-  padding: 40px 0 60px;
-  background-color: #f5f5f7;
-}
-
-.scroller-header {
-  max-width: 980px;
-  margin: 0 auto 20px;
-  padding: 0 20px;
-}
-
-.scroller-track-wrapper {
-  overflow-x: auto;
-  padding: 10px 40px 20px;
-  scrollbar-width: none;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-}
-
-.scroller-track-wrapper::-webkit-scrollbar {
-  display: none;
-}
-
-.scroller-track {
-  display: flex;
-  gap: 20px;
-  width: max-content;
-}
-
-.scroller-card {
-  width: 320px;
-  background-color: var(--color-white);
-  border-radius: 18px;
-  overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-  display: flex;
-  flex-direction: column;
-  padding: 24px;
-  scroll-snap-align: start;
-  transition: transform var(--transition-medium), box-shadow var(--transition-medium);
-}
-
-.scroller-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-}
-
-.card-category {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 12px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: var(--color-grey);
-  margin-bottom: 12px;
-}
-
-.card-category svg {
-  height: 14px;
-  width: 14px;
-}
-
-/* Category Specific Colors */
-.cat-arcade { color: #f25f5c; }
-.cat-music { color: #ff0a54; }
-.cat-fitness { color: #52b788; }
-
-.scroller-card-image {
-  border-radius: 12px;
-  overflow: hidden;
-  position: relative;
-  aspect-ratio: 16/9;
-  background-color: #eaeaea;
-  margin-bottom: 16px;
-}
-
-.scroller-card-image.square {
-  aspect-ratio: 1/1;
-  width: 200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.scroller-card-image img {
-  width: 100%;
-  height: 100%;
+.carousel-image {
+  width: 700px;
+  height: 400px;
   object-fit: cover;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  flex-shrink: 0;
 }
 
-.scroller-card h4 {
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 1.3;
-  margin-bottom: 8px;
-  color: var(--color-dark-grey);
+
+
+.carousel-container-bottom {
+  width: 100%;
+  padding: 10px 0;
+  background-color: #ffffff;
+  overflow: hidden;
+  display: flex; 
 }
 
-.scroller-card p {
-  font-size: 14px;
-  color: var(--color-grey);
-  margin-bottom: 16px;
-  flex-grow: 1;
+.carousel-container-bottom .carousel-track {
+  display: flex;
+  gap: 20px;
+  /* Animates the bottom track independently */
+  animation: slideLeftBottom 30s linear infinite alternate; 
 }
 
-.scroller-card-btn {
-  align-self: flex-start;
-  font-size: 13px;
-  font-weight: 500;
-  color: var(--color-blue);
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  transition: gap var(--transition-fast);
+.carousel-container-bottom .carousel-track:hover {
+  animation-play-state: paused;
 }
 
-.scroller-card-btn:hover {
-  color: var(--color-blue-hover);
-  gap: 8px;
+.carousel-image-bottom {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  flex-shrink: 0;
 }
 
-.scroller-card-btn::after {
-  content: '→';
-  font-weight: 600;
+
+
+@keyframes slideLeftTop {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% + 100vw));
+  }
 }
 
+
+@keyframes slideLeftBottom {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% + 100vw)); 
+  }
+}
 
 footer {
   font-size: 12px;
